@@ -1,0 +1,23 @@
+{
+  "name": "retext",
+  "version": "1.0.0",
+  "description": "a react state management library modeled after redux using hooks and context",
+  "main": "index.js",
+  "author": "matthewdavidrodgers@gmail.com",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && babel ./lib --out-dir dist --extensions='.ts,.js'"
+  },
+  "dependencies": {
+    "react": "^16.8.5"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.2.3",
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.2",
+    "@babel/preset-react": "^7.0.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@types/react": "^16.8.8",
+    "typescript": "^3.3.4000"
+  }
+}
