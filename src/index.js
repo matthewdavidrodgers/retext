@@ -1,6 +1,6 @@
 import * as React from "react";
 
-function createStore<State, Actions>(reducer) {
+function createStore(reducer) {
   const initialState = reducer(undefined, {});
   const Context = React.createContext(undefined);
 
