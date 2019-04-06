@@ -32,7 +32,9 @@ function createStore<State, Actions>(
   function consume<OwnProps, StateProps, DispatchProps>(
     mapStateToProps: RetextMapStateToProps<State, StateProps>,
     mapDispatchToProps: RetextMapDispatchToProps<Actions, DispatchProps>,
-    Component: React.FC<OwnProps & StateProps & DispatchProps>
+    Component:
+      | React.FC<OwnProps & StateProps & DispatchProps>
+      | React.ComponentClass<OwnProps & StateProps & DispatchProps>
   ) {
     const ConsumingComponent: React.FC<
       OwnProps & StateProps & DispatchProps

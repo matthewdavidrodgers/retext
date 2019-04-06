@@ -2,6 +2,8 @@ import pkg from "./package.json";
 
 export default {
   input: "./build/index.js",
+  context: "null",
+  moduleContext: "null",
   output: [
     {
       file: pkg.main,
