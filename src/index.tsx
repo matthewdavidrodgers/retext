@@ -1,19 +1,21 @@
 import * as React from "react";
 
-type RetextReducer<State, Actions> = (
+export type RetextReducer<State, Actions> = (
   state: State | undefined,
   actions: Actions
 ) => State;
 
-type RetextDispatch<Actions> = (action: Actions) => void;
+export type RetextDispatch<Actions> = (action: Actions) => void;
 
-type RetextMapStateToProps<State, StateProps> = (state: State) => StateProps;
+export type RetextMapStateToProps<State, StateProps> = (
+  state: State
+) => StateProps;
 
-type RetextMapDispatchToProps<Actions, DispatchProps> = (
+export type RetextMapDispatchToProps<Actions, DispatchProps> = (
   dispatch: RetextDispatch<Actions>
 ) => DispatchProps;
 
-interface RetextContext<State, Actions> {
+export interface RetextContext<State, Actions> {
   state: State;
   dispatch: RetextDispatch<Actions>;
 }

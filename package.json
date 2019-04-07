@@ -1,10 +1,12 @@
 {
-  "name": "retext",
+  "name": "react-retext",
   "version": "1.0.0",
   "description": "a react state management library modeled after redux using hooks and context",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
-  "files": "types",
+  "files": [
+    "dist"
+  ],
   "types": "dist/index.d.ts",
   "author": "matthewdavidrodgers@gmail.com",
   "license": "MIT",
